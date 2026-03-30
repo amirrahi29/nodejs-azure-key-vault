@@ -7,7 +7,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 const vaultUrl = process.env.AZURE_KEY_VAULT_URL;
-const secretName = process.env.KEY_VAULT_SECRET_NAME;
+const secretName = "username";
 
 function secretClient() {
   return new SecretClient(vaultUrl, new DefaultAzureCredential());
